@@ -9,7 +9,7 @@ body{
 #nav{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 }
 ul{
     display: flex;
