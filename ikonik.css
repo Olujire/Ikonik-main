@@ -32,30 +32,28 @@ ul{
     display: flex;
     justify-content: space-between;
     margin: 0 8em;
-    border: 1px solid yellow;
+}
 
+.sec-two-right{
+    width: 50%;
 }
 .sec-two-left{
     width: 50%;
-    border: 1px solid black;
-}
-.sec-two-right{
-    width: 50%;
-    border: 1px solid green;
-
 }
 .bg-blue-width{
     width: 55%;
-    margin-left: 10em;
+    margin-left: 3em;
 }
 .watch-word{
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: bolder;
+    margin-top: 0.6em;
+    margin-bottom: 0;
 }
 .offers{
     font-weight: bolder;
     opacity: 0.89;
-    margin-bottom: 3.5em;
+    margin: 1.5em 0;
 }
 .apple-store{
     margin: 0px 10px;
@@ -64,7 +62,61 @@ ul{
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1300px) and (min-width: 1050px) {
+    #sec-two{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4em;
+    }
+    .sec-two-left{
+        width: 58%;
+    }
+    .watch-word{
+        font-size: 3.5em;
+        font-weight: bolder;
+        letter-spacing: 1.5px;
+        margin-bottom: 0;
+    }
+    .offers{
+        font-weight: bolder;
+        opacity: 0.89;
+        margin-bottom: 2em;
+    }
+    .sec-two-right{
+        width: 50%;
+
+    }
+    .bg-blue-width{
+        width: 55%;
+        margin-left: 5em;
+    }
+}
+@media screen and (max-width: 1050px) and (min-width: 700px) {
+    #sec-two{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .sec-two-left{
+        margin-top: 2em;
+        justify-self: center;
+        margin-left: 2em;
+
+    }
+    .watch-word{
+        font-size: 2.7em;
+        font-weight: bolder;
+        margin-bottom: 0;
+    }
+    .offers{
+        font-weight: bolder;
+        opacity: 0.89;
+    }
+    .bg-blue-width{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 800px) {
     #sec-two{
         margin: 0 2em;
     }
@@ -85,12 +137,10 @@ ul{
         display: flex;
         justify-content: space-between;
         margin: 0 0;
-        border: 1px solid yellow;
 
     }
     .sec-two-left{
         width: 100%;
-        border: 1px solid black;
         margin: 0 4em;
     }
     .watch-word{
@@ -98,8 +148,6 @@ ul{
     }
     .sec-two-right{
         width: 50%;    
-        border: 1px solid green;
-    
     }
 }
 /* <!-- IKONIK SECTION THREE --> */
