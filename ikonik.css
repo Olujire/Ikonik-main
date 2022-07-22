@@ -9,7 +9,7 @@ body{
 #nav{
     display: flex;
     justify-content: space-between;
-    /* margin: 1em 6em; */
+    margin-bottom: 6em;
 }
 ul{
     display: flex;
@@ -31,20 +31,22 @@ ul{
 #sec-two{
     display: flex;
     justify-content: space-between;
-    width: 85%;
-    margin: auto;
-    margin-top: 5em;
+    margin: 0 8em;
+    border: 1px solid yellow;
+
 }
 .sec-two-left{
-    width: 42%;
-    margin-top: 1.5em;
+    width: 50%;
+    border: 1px solid black;
 }
 .sec-two-right{
-    width: 43%;
+    width: 50%;
+    border: 1px solid green;
+
 }
 .bg-blue-width{
-    width: 65%;
-    margin: 0;
+    width: 55%;
+    margin-left: 10em;
 }
 .watch-word{
     font-size: 3.5em;
@@ -57,6 +59,48 @@ ul{
 }
 .apple-store{
     margin: 0px 10px;
+}
+.download{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 900px) {
+    #sec-two{
+        margin: 0 2em;
+    }
+    .sec-two-right{
+        display: none;
+    }
+    .sec-two-left{
+        width: 100%;
+        margin-top: 0em;
+    }
+    .sec-two-right{
+        width: 100%;
+    }
+    .download{
+        margin-bottom: 2em;
+    }
+    #sec-two{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0;
+        border: 1px solid yellow;
+
+    }
+    .sec-two-left{
+        width: 100%;
+        border: 1px solid black;
+        margin: 0 4em;
+    }
+    .watch-word{
+        font-size: 2.5em;
+    }
+    .sec-two-right{
+        width: 50%;
+        border: 1px solid green;
+    
+    }
 }
 /* <!-- IKONIK SECTION THREE --> */
 .sec-three{
@@ -186,7 +230,6 @@ ul{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
 .sec-seven-second{
     margin: 0 auto;
@@ -237,14 +280,17 @@ ul{
 }
 @media screen and (max-width: 1200px) {
     .faqs{
-        width: 35em;
+        width: 25em;
         margin: 0 auto;
+    }
+    .btn{
+        top: 12%;
     }
 }
 
 /* IKONIK SECTION EIGHT */
 .sec-eight{
-    margin: 20px 0;
+    margin-top: 20px;
     background: url('DSC_4595.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -260,3 +306,136 @@ ul{
 .store-white{
     width: 15%;
 }
+
+/* <!-- IKONIK SECTION NINE --> */
+.stay-tuned{
+    text-align: center;
+}
+.sec-nine{
+    display: flex;
+    flex-direction: row;
+    margin: 0 8em;
+    justify-content: space-between;
+}
+.sec-nine-right form{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.message{
+    margin: 10px 0;
+    height: 50px;
+    width: 430px;
+    box-shadow:  5px 5px 10px #c1c1c1,
+                -5px -5px 10px #ffffff;
+    border: 0;
+}
+.message:focus{
+    outline: 0;
+}
+.inbox{
+    height: 100px;
+}
+.btn-req{
+    background: #7c4fe0;
+    color: #fff;
+    font-size: 15px;
+    width: 430px;
+    padding: 16px;
+    border: 0;
+    border-radius: 10px;
+}
+.btn-req:active{
+    transform: scale(0.97);
+}
+.sec-nine-left{
+    width: 450px;
+    align-items: center;
+}
+.happy-connect{
+    font-size: 1.1em;
+    margin: 2em 0;
+    opacity: 0.87;
+}
+.font-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.font-two{
+    display: flex;
+    align-items: center;
+}
+.contact{
+    margin-left: 1em;
+    opacity: 0.87;
+    text-decoration: none;
+    color: #000;
+}
+.fa-solid{
+    font-size: 50px;
+}
+@media screen and (max-width: 1100px) {
+    .sec-nine{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-nine-right .form{
+      
+    }
+    
+}
+/* <!-- SECTION TEN --> */
+.sec-ten{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    text-align: center;
+    margin: 3em;
+    border: 1px solid black;
+}
+.download-apple{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec-ten-list{
+    border: 1px solid yellow;
+}
+.google-play{
+    width: 50%;
+}
+.google{
+    margin: 10px 0;
+}
+@media screen and (max-width: 600px) {
+    .sec-ten{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 2em;
+    }
+}
+
+/* <!-- SECTION ELEVEN --> */
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #9fa4ae;
+    margin: 0 3em;
+    text-align: center;
+}
+.copy-right{
+    font-size: 15px;
+    margin: 5px 0;
+    opacity: 0.7;
+}
+@media screen and (max-width: 600px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
