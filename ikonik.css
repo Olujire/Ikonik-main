@@ -156,7 +156,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 2em 0;
 }
 .premium{
     border: 1px solid #fff;
@@ -182,13 +182,26 @@ ul{
     opacity: 0.7;
     font-weight: bolder;
 }
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+    .ikonik-diff{
+        font-size: 1.7em;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .solution{
+        display: none;
+    }
+
+
+}   
 /* <!-- IKONIK SECTION FOUR --> */
 .sec-four{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1.5em;
     text-align: center;
-    margin: 5em;
+    margin: 2em;
 }
 .grid-images{
     width: 15%;
@@ -200,10 +213,15 @@ ul{
     margin: 6px;
 }
 .grid{
+    position: relative;
     border-radius: 20px;
     padding: 2em 15px;
     box-shadow:  5px 5px 10px #c1c1c1,
                 -5px -5px 10px #ffffff;
+    transition: transform ease-in 0.2s;
+}
+.grid:hover{
+    transform: translate(0, -10px);
 }
 .grid-content{
     font-size: 17px;
@@ -212,14 +230,16 @@ ul{
 }
 /* <!-- IKONIK SECTION FIVE --> */
 .sec-five{
+    background-color: blueviolet;
+    padding: 25px;
+    color: #fff;
+    margin: 20px 0;
+}
+.sec-five-first{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-    padding: 20px;
-    color: #fff;
-    margin: 20px 0;
 }
 .how-ikonik-works{
     font-size: 3em;
@@ -231,12 +251,11 @@ ul{
     padding-bottom: 0.8em;
 }
 .sec-five-second{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.7em;
     text-align: center;
-    margin: 1em 3em;
-    justify-content: center;
-    align-items: center;
+    margin: 1em 1em;
 }
 .sec-five-img{
     width: 15%;
@@ -244,7 +263,30 @@ ul{
 .app-process{
     margin: 15px;
     padding: 0;
-    /* width: 300px; */
+}
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+    .app-process{
+        margin: 10px;
+    }
+    .how-ikonik-works{
+        font-size: 2em;
+        text-align: center;
+    }
+    .ikonik-works{
+        font-size: 17px;
+    }
+    .sec-five-second{
+        margin: 1em 1em;
+    }
+    .procedure{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .click{
+        font-size: 16px;
+        opacity: 0.81;
+    }
+
 }
 /* <!-- IKONIK SECTION SIX --> */
 .sec-six{
@@ -287,24 +329,25 @@ ul{
     width: 50em;
     background-color: transparent;
     border-bottom: 1px solid #9fa4ae;
-    transition: 0.5s ease;
 }
 .faqs-question{
     font-size: 18px;
     opacity: 0.8;
     font-weight: bolder;
-    padding: 5px 0;
+    padding: 3px 0;
 }
 .faqs-answer{
-    font-size: 14px;
-    opacity: 0.8;
-    font-weight: bolder;
+    font-size: 17px;
+    opacity: 0.77;
     display: none;
-    padding: 2px 0;
+    padding: 5px 0;
+    letter-spacing: 0.2px;
+    transform: translate(0 -5px);
 
 }
 .faqs.active .faqs-answer{
     display: block;
+    transition: transform ease-in 0.5s;
 }
 .btn{
     position: absolute;
@@ -328,7 +371,7 @@ ul{
 }
 @media screen and (max-width: 1200px) {
     .faqs{
-        width: 25em;
+        width: 30em;
         margin: 0 auto;
     }
     .btn{
@@ -353,6 +396,15 @@ ul{
 }
 .store-white{
     width: 15%;
+}
+@media screen and (max-width: 1050px) and (min-width: 500px) {
+    .ikonik-available{
+        font-size: 2em;
+    }
+    .store-white{
+        width: 30%;
+    }
+
 }
 
 /* <!-- IKONIK SECTION NINE --> */
@@ -403,7 +455,7 @@ ul{
 .happy-connect{
     font-size: 1.1em;
     margin: 2em 0;
-    opacity: 0.87;
+    opacity: 0.77;
 }
 .font-one{
     display: flex;
@@ -417,14 +469,14 @@ ul{
 }
 .contact{
     margin-left: 1em;
-    opacity: 0.87;
+    opacity: 0.81;
     text-decoration: none;
     color: #000;
 }
 .fa-solid{
     font-size: 50px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) and (min-width: 500px) {
     .sec-nine{
         margin: 0 auto;
         display: flex;
@@ -432,7 +484,7 @@ ul{
         align-items: center;
     }
     .sec-nine-right .form{
-      
+
     }
     
 }
@@ -443,7 +495,6 @@ ul{
     gap: 2em;
     text-align: center;
     margin: 3em;
-    border: 1px solid black;
 }
 .download-apple{
     display: flex;
@@ -451,13 +502,19 @@ ul{
     justify-content: space-between;
 }
 .sec-ten-list{
-    border: 1px solid yellow;
 }
 .google-play{
     width: 50%;
 }
 .google{
     margin: 10px 0;
+}
+.blue:hover{
+    color: #7c4fe0;
+    cursor: pointer;
+}
+.fa-heart{
+    font-size: 15px;
 }
 @media screen and (max-width: 600px) {
     .sec-ten{
