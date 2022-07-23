@@ -397,12 +397,21 @@ ul{
 .store-white{
     width: 15%;
 }
-@media screen and (max-width: 1050px) and (min-width: 500px) {
+@media screen and (max-width: 700px) and (min-width: 500px) {
     .ikonik-available{
         font-size: 2em;
     }
     .store-white{
-        width: 30%;
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 1050px) and (min-width: 700px) {
+    .store-white{
+        width: 15%;
+    }
+    .ikonik-available{
+        font-size: 1.8em;
     }
 
 }
