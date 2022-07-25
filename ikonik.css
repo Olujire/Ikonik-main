@@ -5,22 +5,32 @@ body{
     margin: 0;
     padding: 0;
 }
+.content{
+    transform: translateX(500%);
+    transition: transform 1.2s ease-in;
+}
+.content:nth-of-type(even){
+    transform: translateX(-500%);
+} 
+.content.show{
+    transform: translateX(0);
+}
     /* IKONIK SECTION ONE */
 nav{
-    background: #fff;
-    height: 90px;
+    background: #f8f9fa;
+    height: 60px;
     position: sticky;
     top: 0;
     margin-bottom: 4em;
 }
 .logo{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 50px;
     line-height: 100px;
 }
 .nav{
     float: right;
-    line-height: 30px;
+    line-height: 20px;
 }
 .nav-bar{
     text-decoration: none;
