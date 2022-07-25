@@ -9,18 +9,36 @@
     <link rel="stylesheet" href="ikonik.css">
 </head>
 <body>
-    <div class="content">
+<div class="content">
     <!-- IKONIK SECTION  ONE-->
-    <nav>
-        <img src="logo.png" class="logo" alt="ikonik">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle">
-        <div class="nav">
-                <a href="#" class="nav-bar">Home</a>
-                <a href="#" class="nav-bar">Features</a>
-                <a href="#" class="nav-bar space">Contact</a>
+    <div class="big-screen">
+        <img src="logo.png" alt="Ikonik" class="big-screen-logo">
+        <ul class="big-screen-navbar">
+            <li><a href="#" class="big-screen-bar">Home</a></li>
+            <li><a href="#" class="big-screen-bar">Features</a></li>
+            <li><a href="#" class="space big-screen-bar">Contact</a></li>
+        </ul>
+    </div>
+    <div class="small-screen">
+        <button class="nav-btn open-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <img src="logo.png" alt="Ikonik" class="small-screen-logo">
+        <div class="nav nav-black">
+            <div class="nav nav-red">
+                <div class="nav  nav-white">
+                    <button class="nav-btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="nav-bar">
+                        <a href="#" class="bar">Home</a>
+                        <a href="#" class="bar">Contact</a>
+                        <a href="#" class="bar">Feedback</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
     <!-- IKONIK SECTION TWO -->
     <div id="sec-two">
         <div class="sec-two-left">
@@ -114,7 +132,7 @@
                 </p>
                 <button class="btn">
                     <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" id="times"></i>
                 </button>
             </div>
             <div class="faqs">
@@ -122,15 +140,15 @@
                 <p class="faqs-answer">Yes, you can. Just choose the network you want to recharge, state the amount and recharge. It's that simple.</p>
                 <button class="btn">
                     <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" id="times"></i>
                 </button>
             </div>
             <div class="faqs">
                 <h1 class="faqs-question">How much discount do i get?</h1>
-                <p class="faqs-answer">You get 2% discount on every airtime purchase you do and up to 5% discount on your data.</p>
+                <p class="faqs-answer" id="times">You get 2% discount on every airtime purchase you do and up to 5% discount on your data.</p>
                 <button class="btn">
                     <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" id="times"></i>
                 </button>
             </div>
             <div class="faqs">
@@ -138,7 +156,7 @@
                 <p class="faqs-answer">Click on the "profile button" and edit your profile. This wouldn't take effect immediately as it might need to be reviewed before going live.</p>
                 <button class="btn">
                     <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" id="times"></i>
                 </button>
             </div>
             <div class="faqs">
@@ -146,7 +164,7 @@
                 <p class="faqs-answer">Wow! really? Apologies for that. Kindly reach us via email or the phone number on the website.</p>
                 <button class="btn">
                     <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" id="times"></i>
                 </button>
             </div>
         </div>
