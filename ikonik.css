@@ -6,7 +6,6 @@ body{
     font-family: 'sans-serif';
     overflow-x: hidden;
 }
-
 .content{
     transform: translateX(500%);
     transition: transform 1.2s ease-in;
@@ -33,7 +32,6 @@ body{
 .big-screen-navbar{
     display: flex;
     list-style: none;
-
 }
 .big-screen-bar{
     text-decoration: none;
@@ -56,8 +54,6 @@ body{
     background-color: #fff;
     margin-bottom: 3em;
 }
-
-
 @media screen and (max-width: 900px) {
     .big-screen{
         display: none;
@@ -106,14 +102,6 @@ body{
     }
     .nav-black.visible{
         transition-delay: 0s;
-    }
-    .nav-red{
-        background-color: #f1eeee;
-        width: 95%;
-        transition-delay: 0.2s;
-    }
-    .nav-red.visible{
-        transition-delay: 0.2s;
     }
     .nav-white{
         background-color: #fff;
@@ -676,6 +664,10 @@ span{
 .fa-heart{
     font-size: 15px;
 }
+.links{
+    font-size: 19px;
+    opacity: 0.98;
+}
 @media screen and (max-width: 600px) {
     .sec-ten{
         display: grid;
@@ -688,6 +680,7 @@ span{
 footer{
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
     border-top: 1px solid #9fa4ae;
     margin: 0 3em;
     text-align: center;
