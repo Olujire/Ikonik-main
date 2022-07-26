@@ -8,7 +8,7 @@ body{
 }
 .content{
     transform: translateX(500%);
-    transition: transform 1.2s ease-in;
+    transition: transform 1.7s ease-in;
 }
 .content:nth-of-type(even){
     transform: translateX(-500%);
@@ -16,6 +16,7 @@ body{
 .content.show{
     transform: translateX(0);
 }
+
     /* IKONIK SECTION ONE NAVBAR */
 .big-screen{
     display: flex;
@@ -654,10 +655,18 @@ span{
 .google-play{
     width: 50%;
 }
+.fa-brands{
+    font-size: 2em;
+    /* margin: 10px; */
+}
+.fa-brands:hover{
+    transform: rotateY(360deg);
+}
 .google{
     margin: 10px 0;
 }
 .blue:hover{
+    transition: color 0.3s ease;
     color: #7c4fe0;
     cursor: pointer;
 }
@@ -665,7 +674,7 @@ span{
     font-size: 15px;
 }
 .links{
-    font-size: 19px;
+    font-size: 23px;
     opacity: 0.98;
 }
 @media screen and (max-width: 600px) {
