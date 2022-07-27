@@ -3,6 +3,7 @@
 body{
     font-family: 'sans-serif';
 }
+
 .content{
     transform: translateX(500%);
     transition: transform 1.7s ease-in;
@@ -13,8 +14,6 @@ body{
 .content.show{
     transform: translateX(0);
 }
-
-
     /* IKONIK SECTION ONE NAVBAR */
 .big-screen{
     display: flex;
