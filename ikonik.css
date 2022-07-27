@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=sans-serif&display=swap'); 
-/* *{
-    box-sizing: border-box;
-} */
+
 body{
     font-family: 'sans-serif';
 }
@@ -247,6 +245,12 @@ body{
         flex-direction: row;
         margin: 0;
     }
+    .apple-store{
+        width: 90%;
+    }
+    .apple{
+        width: 97%;
+    }
 }
 @media screen and (max-width: 750px) {
     .sec-two-left{
@@ -330,12 +334,12 @@ span{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1.5em;
     text-align: center;
-    margin: 10px;
+    margin: 0;
 }
 .grid-images{
     width: 15%;
     padding: 0px 0px;
-    margin: 0;
+    margin: 20px;
 }
 .grid-heading{
     padding: 0px 0px;
@@ -363,6 +367,7 @@ span{
     background-color: blueviolet;
     color: #fff;
     padding: 10px;
+    margin-top: 1em;
 }
 .sec-five-first{
     display: flex;
@@ -719,7 +724,6 @@ span{
         width: 100%;
         margin: 0;
         padding: 0;
-
     }
 }
 

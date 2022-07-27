@@ -45,26 +45,3 @@ function changeImage(){
 
     images.style.transform = `translateX(${-currentImage * 100}px)`
 }
-// SCROLL ANIMATION
-const contents = document.querySelectorAll(".content")
-
-window.addEventListener('scroll', ()=>{
-    revealContents()
-}) 
-
-revealContents()
-
-function revealContents(){
-   const triggerPoint = window.innerHeight / 5 * 4
-
-    contents.forEach( (content)=>{
-        const contentTop = content.getBoundingClientRect().top
-
-        if(contentTop < triggerPoint){
-            content.classList.add('show')
-        }else{
-            content.classList.remove('show')
-        }
-    })
-
-}
