@@ -7,12 +7,30 @@ openBtn.addEventListener('click', ()=>{
     navs.forEach( (nav)=>{
         nav.classList.add('visible')
     })
+    disableScroll()
 })
 closeBtn.addEventListener('click', ()=>{
     navs.forEach( (nav)=>{
         nav.classList.remove('visible')
     })
+    enableScroll()
 })
+
+function disableScroll() {
+        scrollTop = 
+          window.scrollY || document.documentElement.scrollTop;
+        scrollLeft = 
+          window.scrollX || document.documentElement.scrollLeft,
+
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+    }
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
 // FREQUENTLY ASKED QUESTIONS
 const faqsbtn = document.querySelectorAll('.btn')
 
@@ -22,6 +40,8 @@ faqsbtn.forEach((btn)=>{
     })
 })
 
+
+// IMAGE SCROLL BAR
 const images = document.querySelector('.image-container')
 
 const img = document.querySelectorAll('.image-container .six-img')

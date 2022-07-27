@@ -14,6 +14,7 @@ body{
     transform: translateX(0);
 }
 
+
     /* IKONIK SECTION ONE NAVBAR */
 .big-screen{
     display: flex;
@@ -66,7 +67,7 @@ body{
         background-color: #fff;
     }
     .small-screen-logo{
-        margin-left: 40px;
+        margin-left: 10px;
     }
     .nav-btn{
         border: none;
@@ -77,8 +78,8 @@ body{
     .open-btn{
         position: fixed;
         top: 15px;
-        right: 60px;
-        font-size: 25px;
+        right: 10px;
+        font-size: 35px;
     }
     .nav{
         position: fixed;
@@ -92,7 +93,7 @@ body{
         transform: translateX(0);
     }
     .nav-black{
-        background-color: rgb(197, 195, 195);
+        background-color: #fff;
         width: 50%;
         max-width: 480px;
         min-width: 320px;
@@ -329,12 +330,31 @@ span{
     }
 }   
 /* <!-- IKONIK SECTION FOUR --> */
+
 .sec-four{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7em;
     text-align: center;
-    margin: 0;
+}
+
+.grid{
+    border-radius: 20px;
+    padding: 2em 15px;
+    box-shadow:  5px 5px 10px #c1c1c1,
+                -5px -5px 10px #ffffff;
+    transition: transform ease-in 0.2s;
+    margin: 20px 20px;
+    text-align: center;
+
+}
+.grid:hover{
+    transform: translate(0, -10px);
+}
+.grid-content{
+    font-size: 17px;
+    opacity: 0.7;
+    margin: 3px;
 }
 .grid-images{
     width: 15%;
@@ -345,22 +365,11 @@ span{
     padding: 0px 0px;
     margin: 6px;
 }
-.grid{
-    position: relative;
-    border-radius: 20px;
-    padding: 2em 15px;
-    box-shadow:  5px 5px 10px #c1c1c1,
-                -5px -5px 10px #ffffff;
-    transition: transform ease-in 0.2s;
-    margin: 0;
-}
-.grid:hover{
-    transform: translate(0, -10px);
-}
-.grid-content{
-    font-size: 17px;
-    opacity: 0.7;
-    margin: 3px;
+@media screen and (max-width: 1050px) {
+    .sec-four{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        display: grid;
+    }
 }
 /* <!-- IKONIK SECTION FIVE --> */
 .sec-five{
@@ -444,7 +453,7 @@ span{
 .easy{
     text-align: center;
     font-size: 17px;
-    opacity: 0.7;
+    opacity: 0.92;
     font-weight: lighter;
 }
 .carousel{
@@ -488,7 +497,7 @@ span{
 }
 .close-btn.faqs-question{
     font-size: 18px;
-    opacity: 0.8;
+    opacity: 0.95;
     padding: 3px 0;
 }
 .faqs-question{
@@ -496,7 +505,7 @@ span{
 }
 .faqs-answer{
     font-size: 17px;
-    opacity: 0.77;
+    opacity: 0.92;
     display: none;
     padding: 5px 0;
     letter-spacing: 0.2px;
@@ -532,8 +541,6 @@ span{
     .faqs{
         width: 600px;
         margin: 0;
-        font-weight: lighter;
-
     }
     .btn{
         top: 10%;
@@ -554,7 +561,6 @@ span{
     .faqs{
         width: 100%;
         margin: 0;
-        opacity: 0.8;
         font-weight: lighter;
         padding: 0;
     }
