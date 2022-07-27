@@ -65,6 +65,10 @@ body{
         height: 70px;
         background-color: #fff;
     }
+    .stop-scroll{
+        height: 100%;
+        overflow: hidden;
+    }
     .small-screen-logo{
         margin-left: 10px;
     }
@@ -332,6 +336,8 @@ span{
 
 .sec-four{
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 15px;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.7em;
     text-align: center;
@@ -339,11 +345,11 @@ span{
 
 .grid{
     border-radius: 20px;
-    padding: 2em 15px;
+    padding: 1em 15px;
     box-shadow:  5px 5px 10px #c1c1c1,
                 -5px -5px 10px #ffffff;
     transition: transform ease-in 0.2s;
-    margin: 20px 20px;
+    margin: 10px 20px;
     text-align: center;
 
 }
@@ -366,7 +372,7 @@ span{
 }
 @media screen and (max-width: 1050px) {
     .sec-four{
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
         display: grid;
     }
 }
